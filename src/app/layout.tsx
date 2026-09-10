@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "RiverTwin — Flood & Dam-Break Digital Twin",
   description: "Explore flood scenarios in Nepal. Simulate inundation, understand community impact, and plan earlier with RiverTwin.",
+  icons: {
+    icon: "/images.jpg",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

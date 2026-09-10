@@ -86,24 +86,6 @@ PowerShell persistent env:
 [Environment]::SetEnvironmentVariable("DATABASE_URL", "postgresql://postgres:postgres@127.0.0.1:5432/app_db", "User")
 ```
 
-## Free deployment (no credit card)
-
-GitHub Pages cannot host this — it has API routes + Postgres.
-
-Use:
-
-- **App + APIs:** Vercel Hobby (free, no card, 100GB/mo, 1M calls/mo, non-commercial only)
-- **Database:** Neon Free (free, no card, 0.5GB, 100 CU-hrs/mo, sleeps after 5min idle)
-
-Steps:
-
-1. Push to GitHub
-2. Import repo in Vercel
-3. Add env var `DATABASE_URL` = your Neon connection string
-4. Deploy, then run once locally: `npx drizzle-kit push` with the Neon URL to create tables
-
-Alternative free DB: Supabase Free (500MB, pauses after 7 days idle).
-
 ## Smoke test
 
 ```powershell
